@@ -30,7 +30,7 @@ public class JobTest {
         test_job2 = new Job();
         test_job3 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         test_job6 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-        test_job7 = new Job("Hello Kitty", new Employer("hello"), null , new PositionType("Manager"), new CoreCompetency("Strong"));
+        test_job7 = new Job("Hello Kitty", new Employer("hello"), new Location(""), new PositionType("Manager"), new CoreCompetency("Strong"));
     }
 
     @Test

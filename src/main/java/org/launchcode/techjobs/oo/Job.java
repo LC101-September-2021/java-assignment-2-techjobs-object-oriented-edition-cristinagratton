@@ -38,7 +38,7 @@ public class Job {
 
         if (this.name == null && this.employer == null && this.location == null && this.positionType == null && this.coreCompetency == null) {
             return "OOPS! This job does not seem to exist.";
-        } else if (this.name == null) {
+        } else if (this.name == null || this.name == "") {
             return "\n" +
                     "ID: " + this.getId() +
                     "\n" +
@@ -52,7 +52,7 @@ public class Job {
                     "\n" +
                     "Core Competency: " + this.getCoreCompetency() +
                     "\n";
-        } else if (this.employer == null) {
+        } else if (this.employer == null || this.employer.toString() == "") {
             return "\n" +
                     "ID: " + this.getId() +
                     "\n" +
@@ -66,7 +66,7 @@ public class Job {
                     "\n" +
                     "Core Competency: " + this.getCoreCompetency() +
                     "\n";
-        } else if (this.location == null) {
+        } else if (this.location == null || this.location.toString() == "") {
             return "\n" +
                     "ID: " + this.getId() +
                     "\n" +
@@ -80,7 +80,7 @@ public class Job {
                     "\n" +
                     "Core Competency: " + this.getCoreCompetency() +
                     "\n";
-        } else if (this.positionType == null) {
+        } else if (this.positionType == null || this.positionType.toString() == "") {
             return "\n" +
                     "ID: " + this.getId() +
                     "\n" +
@@ -94,7 +94,7 @@ public class Job {
                     "\n" +
                     "Core Competency: " + this.getCoreCompetency() +
                     "\n";
-        } else if (this.coreCompetency == null) {
+        } else if (this.coreCompetency == null || this.coreCompetency.toString() == "") {
             return "\n" +
                     "ID: " + this.getId() +
                     "\n" +
