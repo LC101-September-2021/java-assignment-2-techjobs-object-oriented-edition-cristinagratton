@@ -33,6 +33,98 @@ public class Job {
 
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
+    @Override
+    public String toString() {
+
+        if (this.name == null && this.employer == null && this.location == null && this.positionType == null && this.coreCompetency == null) {
+            return "OOPS! This job does not seem to exist.";
+        } else if (this.name == null) {
+            return "\n" +
+                    "ID: " + this.getId() +
+                    "\n" +
+                    "Name: Data not available"  +
+                    "\n" +
+                    "Employer: " + this.getEmployer() +
+                    "\n" +
+                    "Location: " + this.getLocation() +
+                    "\n" +
+                    "Position Type: " + this.getPositionType() +
+                    "\n" +
+                    "Core Competency: " + this.getCoreCompetency() +
+                    "\n";
+        } else if (this.employer == null) {
+            return "\n" +
+                    "ID: " + this.getId() +
+                    "\n" +
+                    "Name: " + this.getName() +
+                    "\n" +
+                    "Employer: Data not available" +
+                    "\n" +
+                    "Location: " + this.getLocation() +
+                    "\n" +
+                    "Position Type: " + this.getPositionType() +
+                    "\n" +
+                    "Core Competency: " + this.getCoreCompetency() +
+                    "\n";
+        } else if (this.location == null) {
+            return "\n" +
+                    "ID: " + this.getId() +
+                    "\n" +
+                    "Name: " + this.getName() +
+                    "\n" +
+                    "Employer: " + this.getEmployer() +
+                    "\n" +
+                    "Location: Data not available" +
+                    "\n" +
+                    "Position Type: " + this.getPositionType() +
+                    "\n" +
+                    "Core Competency: " + this.getCoreCompetency() +
+                    "\n";
+        } else if (this.positionType == null) {
+            return "\n" +
+                    "ID: " + this.getId() +
+                    "\n" +
+                    "Name: " + this.getName() +
+                    "\n" +
+                    "Employer: " + this.getEmployer() +
+                    "\n" +
+                    "Location: " + this.getLocation() +
+                    "\n" +
+                    "Position Type: Data not available" +
+                    "\n" +
+                    "Core Competency: " + this.getCoreCompetency() +
+                    "\n";
+        } else if (this.coreCompetency == null) {
+            return "\n" +
+                    "ID: " + this.getId() +
+                    "\n" +
+                    "Name: " + this.getName() +
+                    "\n" +
+                    "Employer: " + this.getEmployer() +
+                    "\n" +
+                    "Location: " + this.getLocation() +
+                    "\n" +
+                    "Position Type: " + this.getPositionType() +
+                    "\n" +
+                    "Core Competency: Data not available" +
+                    "\n";
+        } else {
+            return "\n" +
+                    "ID: " + this.getId() +
+                    "\n" +
+                    "Name: " + this.getName() +
+                    "\n" +
+                    "Employer: " + this.getEmployer() +
+                    "\n" +
+                    "Location: " + this.getLocation() +
+                    "\n" +
+                    "Position Type: " + this.getPositionType() +
+                    "\n" +
+                    "Core Competency: " + this.getCoreCompetency() +
+                    "\n";
+        }
+
+    }
 
     @Override
     public boolean equals(Object o) {
